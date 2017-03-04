@@ -34,7 +34,7 @@
 }
 
 #pragma mark ---配置导航条/左侧按钮/右侧按钮
--(void)configShowHeaderBarOrNot:(BOOL)isShowOrNot andLeftBtnShow:(BOOL)leftShow andRightBtnShow:(BOOL)rightShow andTitle:(NSString *)title{
+- (void)configShowHeaderBarOrNot:(BOOL)isShowOrNot andLeftBtnShow:(BOOL)leftShow andRightBtnShow:(BOOL)rightShow andTitle:(NSString *)title{
     isShowHeader = isShowOrNot ;
     [self.navigationController setNavigationBarHidden:YES];
     if (isShowHeader) {
@@ -46,7 +46,7 @@
 }
 
 #pragma mark ---内部函数
--(void)CommenHeaderBarWithLeftBtnShow:(BOOL)isShowLeft andRtghtBtnShow:(BOOL)isShowRight andTitle:(NSString *)title
+- (void)CommenHeaderBarWithLeftBtnShow:(BOOL)isShowLeft andRtghtBtnShow:(BOOL)isShowRight andTitle:(NSString *)title
 {
     headerView = [[UIView alloc] init];
     [headerView setFrame:CGRectMake(0, 0, ScreenWidth, NavBarHeight_Narmal + StatueBarHeight)];
@@ -86,7 +86,7 @@
 }
 
 #pragma mark ---leftBtn
--(void)setLeftBtnBgNormal:(UIImage *)img_nor andHighlight:(UIImage *)img_hig andTitle:(NSString *)title
+- (void)setLeftBtnBgNormal:(UIImage *)img_nor andHighlight:(UIImage *)img_hig andTitle:(NSString *)title
 {
     
     if (img_nor) {
@@ -107,7 +107,7 @@
 }
 
 #pragma mark ---rightBtn
--(void)setRightBtnBgNormal:(UIImage *)img_nor andHighlight:(UIImage *)img_hig andTitle:(NSString *)title
+- (void)setRightBtnBgNormal:(UIImage *)img_nor andHighlight:(UIImage *)img_hig andTitle:(NSString *)title
 {
     if (title) {
         [rightButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -123,13 +123,13 @@
 }
 
 #pragma mark ---click
--(void)leftBtnTap:(id)sender
+- (void)leftBtnTap:(id)sender
 {
     [self.navigationController popViewControllerAnimated:NO];
 }
 
 #pragma mark ---click
--(void)rightBtnTap:(id)sender
+- (void)rightBtnTap:(id)sender
 {
     
 }
@@ -163,12 +163,12 @@
 }
 
 
--(void)selectBtnClick:(id)sender
+- (void)selectBtnClick:(id)sender
 {
     
 }
 
--(NSArray *)judgeVCForBtn:(NSString *)VC
+- (NSArray *)judgeVCForBtn:(NSString *)VC
 {
     if ([VC isEqualToString:@"homePageVC"]) {
         arr = [[NSArray alloc] initWithObjects:@"Runtime基本功能:获取类的信息", @"Runtime其他功能", @"实际应用:实现自动归档与解档", @"动态消息解析与转发", nil];

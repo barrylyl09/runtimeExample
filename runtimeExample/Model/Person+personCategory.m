@@ -19,7 +19,7 @@ const char * str = "genderKey"; //作为key，字符串常量 必须是c语言�
 
 @dynamic gender;
 
--(void)setGender:(NSString *)gender
+- (void)setGender:(NSString *)gender
 {
     /*
      第一个参数是需要添加属性的对象；
@@ -31,7 +31,7 @@ const char * str = "genderKey"; //作为key，字符串常量 必须是c语言�
     
 }
 
--(NSString *)getGender
+- (NSString *)getGender
 {
 //    NSString * genderStr = objc_getAssociatedObject(self, str);
 //    NSLog(@"%@",genderStr);

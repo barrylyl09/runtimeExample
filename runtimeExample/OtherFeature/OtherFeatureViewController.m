@@ -121,7 +121,7 @@ int myAddingFunction(id self,SEL _cmd)
 }
 
 
--(void)selectBtnClick:(id)sender
+- (void)selectBtnClick:(id)sender
 {
     NSInteger idx = ((UIButton *)sender).tag;
     switch (idx) {

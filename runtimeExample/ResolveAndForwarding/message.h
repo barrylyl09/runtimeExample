@@ -10,6 +10,6 @@
 
 @interface message : NSObject
 
--(NSString *)sendMessage:(NSString *)word;
+- (NSString *)sendMessage:(NSString *)word;
 
 @end

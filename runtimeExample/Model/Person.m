@@ -14,7 +14,7 @@
     NSString * introduction;
 }
 
--(instancetype)init
+- (instancetype)init
 {
     self = [super init];
     
@@ -26,7 +26,7 @@
 }
 
 #pragma mark --- 实现归档操作
--(void)encodeWithCoder:(NSCoder *)aCoder
+- (void)encodeWithCoder:(NSCoder *)aCoder
 {
     unsigned int count = 0;
     Ivar  * ivars = class_copyIvarList([Person class], &count);
@@ -50,7 +50,7 @@
 }
 
 #pragma mark --- 实现解档操作
--(id)initWithCoder:(NSCoder *)aDecoder
+- (id)initWithCoder:(NSCoder *)aDecoder
 {
     
     if (self = [super init]) {
@@ -80,12 +80,12 @@
 
 
 
--(NSString *)func1
+- (NSString *)func1
 {
     return @"执行fun1方法";
 }
 
--(NSString *)func2
+- (NSString *)func2
 {
     return @"执行fun2方法";
 }

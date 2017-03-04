@@ -10,20 +10,20 @@
 
 @interface BasicViewController : UIViewController
 
--(void)configShowHeaderBarOrNot:(BOOL)isShowOrNot andLeftBtnShow:(BOOL)leftShow andRightBtnShow:(BOOL)rightShow andTitle:(NSString *)title;
+- (void)configShowHeaderBarOrNot:(BOOL)isShowOrNot andLeftBtnShow:(BOOL)leftShow andRightBtnShow:(BOOL)rightShow andTitle:(NSString *)title;
 
--(void)setLeftBtnBgNormal:(UIImage *)img_nor andHighlight:(UIImage *)img_hig andTitle:(NSString *)title;
+- (void)setLeftBtnBgNormal:(UIImage *)img_nor andHighlight:(UIImage *)img_hig andTitle:(NSString *)title;
 
--(void)setRightBtnBgNormal:(UIImage *)img_nor andHighlight:(UIImage *)img_hig andTitle:(NSString *)title;
+- (void)setRightBtnBgNormal:(UIImage *)img_nor andHighlight:(UIImage *)img_hig andTitle:(NSString *)title;
 
--(void)leftBtnTap:(id)sender;
+- (void)leftBtnTap:(id)sender;
 
--(void)rightBtnTap:(id)sender;
+- (void)rightBtnTap:(id)sender;
 
 - (UILabel *)creatLabel;
 
 - (void)selectBtnForWhichVC:(NSString *)VC;
 
--(void)selectBtnClick:(id)sender;
+- (void)selectBtnClick:(id)sender;
 
 @end

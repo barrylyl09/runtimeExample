@@ -12,8 +12,8 @@
 
 @property (nonatomic, copy) NSString *gender;
 
--(void)setGender:(NSString *)gender;
+- (void)setGender:(NSString *)gender;
 
--(NSString *)getGender;
+- (NSString *)getGender;
 
 @end

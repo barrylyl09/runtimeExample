@@ -14,7 +14,7 @@
 @property (nonatomic, copy)   NSString *phone;
 @property (nonatomic, assign) NSInteger age;
 
--(NSString *)func1;
--(NSString *)func2;
+- (NSString *)func1;
+- (NSString *)func2;
 
 @end

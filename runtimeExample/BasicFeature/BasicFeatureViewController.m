@@ -143,7 +143,7 @@
 
 
 
--(void)selectBtnClick:(id)sender
+- (void)selectBtnClick:(id)sender
 {
     NSInteger idx = ((UIButton *)sender).tag;
     switch (idx) {
