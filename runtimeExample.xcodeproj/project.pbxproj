@@ -21,6 +21,7 @@
 		244837EE1E5A9FF500F0BC71 /* Person+personCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 244837ED1E5A9FF500F0BC71 /* Person+personCategory.m */; };
 		244837F11E5B319300F0BC71 /* message.m in Sources */ = {isa = PBXBuildFile; fileRef = 244837F01E5B319300F0BC71 /* message.m */; };
 		244837F71E5B322000F0BC71 /* MessageForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 244837F61E5B322000F0BC71 /* MessageForwarding.m */; };
+		24A50E811E88E6F600AD60F0 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A50E801E88E6F600AD60F0 /* UIViewController+Tracking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		244837F01E5B319300F0BC71 /* message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = message.m; sourceTree = "<group>"; };
 		244837F51E5B322000F0BC71 /* MessageForwarding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageForwarding.h; sourceTree = "<group>"; };
 		244837F61E5B322000F0BC71 /* MessageForwarding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageForwarding.m; sourceTree = "<group>"; };
+		24A50E7F1E88E6F600AD60F0 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		24A50E801E88E6F600AD60F0 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		244837B11E59F23900F0BC71 /* runtimeExample */ = {
 			isa = PBXGroup;
 			children = (
+				24A50E7E1E88E6E800AD60F0 /* ViewController+Extension */,
 				244837E51E5A8CF600F0BC71 /* Model */,
 				244837CD1E59F40A00F0BC71 /* BasicVC */,
 				244837CA1E59F3A100F0BC71 /* BasicFeature */,
@@ -171,6 +175,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		24A50E7E1E88E6E800AD60F0 /* ViewController+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				24A50E7F1E88E6F600AD60F0 /* UIViewController+Tracking.h */,
+				24A50E801E88E6F600AD60F0 /* UIViewController+Tracking.m */,
+			);
+			path = "ViewController+Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,6 +258,7 @@
 				244837D31E59F75500F0BC71 /* homePageViewController.m in Sources */,
 				244837DB1E5A0E5600F0BC71 /* BasicFeatureViewController.m in Sources */,
 				244837E41E5A106400F0BC71 /* ResolutionAndForwardViewController.m in Sources */,
+				24A50E811E88E6F600AD60F0 /* UIViewController+Tracking.m in Sources */,
 				244837E11E5A0EA100F0BC71 /* ArchiverAndUnArchiverViewController.m in Sources */,
 				244837DE1E5A0E8100F0BC71 /* OtherFeatureViewController.m in Sources */,
 				244837D61E59F7E900F0BC71 /* BasicViewController.m in Sources */,
@@ -408,6 +422,7 @@
 				244837C81E59F23900F0BC71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
