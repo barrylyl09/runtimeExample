@@ -29,6 +29,12 @@
     
 }
 
+- (void)injected
+{
+    NSLog(@"I've been injected: %@", self);
+}
+
+
 - (void)selectBtnClick:(id)sender
 {
     NSInteger idx = ((UIButton *)sender).tag;
